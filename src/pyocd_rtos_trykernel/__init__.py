@@ -1,7 +1,7 @@
 # TryKernel pyOCD RTOS Plugin
 # Copyright (C) 2023 Kenta Ida
 # SPDX-License-Identifier: Apache-2.0
-# This plugin is based on pyOCD TryKernel plugin.
+# This plugin is based on pyOCD FreeRTOS plugin.
 # The original license is as follows:
 # pyOCD debugger
 # Copyright (c) 2016-2020 Arm Limited
