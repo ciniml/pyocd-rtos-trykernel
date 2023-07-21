@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyocd_rtos_trykernel"
+version = "0.0.1"
+authors = [
+  { name="Kenta Ida", email="fuga@fugafuga.org" },
+]
+description = "A RTOS plugin for pyOCD to support TryKernel RTOS."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pyocd>=0.34.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ciniml/pyocd-rtos-trykernel"
+"Bug Tracker" = "https://github.com/ciniml/pyocd-rtos-trykernel/issues"
+
+[project.entry-points."pyocd.rtos"]
+trykernel = "pyocd_rtos_trykernel:TryKernelPlugin"
